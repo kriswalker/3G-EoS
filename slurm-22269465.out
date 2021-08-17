@@ -1,0 +1,161 @@
+16:35 bilby_pipe WARNING : You do not have nds2 (python-nds2-client) installed. You may  experience problems accessing interferometer data.
+16:35 bilby_pipe WARNING : You do not have LDAStools.frameCPP (python-ldas-tools-framecpp) installed. You may experience problems accessing interferometer data.
+16:35 bilby_pipe INFO    : Running bilby_pipe version: 1.0.4: (CLEAN) a0f8deb 2021-05-14 15:08:45 +0000
+16:35 bilby_pipe INFO    : Running bilby: 1.1.3: (UNCLEAN) 430c7b6e 2021-07-22 16:02:26 +0000
+16:35 bilby_pipe INFO    : Command line arguments: Namespace(accounting='lol', allow_tape=True, analysis_executable=None, calibration_model=None, catch_waveform_errors=False, channel_dict=None, coherence_test=False, condor_job_priority=0, conversion_function=None, convert_to_flat_in_component_mass=False, create_plots=False, create_summary=False, data_dict=None, data_dump_file=None, data_format=None, default_prior='BBHPriorDict', deltaT=0.2, detectors=['CE', 'CES', 'ET1', 'ET2', 'ET3'], distance_marginalization=True, distance_marginalization_lookup_table='marg_table', duration=1024.0, email=None, existing_dir=None, extra_likelihood_kwargs=None, frequency_domain_source_model='lal_binary_neutron_star', gaussian_noise=True, generation_function=None, generation_seed=0, gps_file=None, gps_tuple=None, idx=0, ignore_gwpy_data_quality_check=True, ini='outdir_bilby_pipe/inj_0_config_complete.ini', injection=True, injection_dict=None, injection_file='inj_file.dat', injection_numbers=['0'], injection_waveform_approximant='IMRPhenomPv2_NRTidal', jitter_time=False, label='inj_0_data0_0-0_generation', likelihood_type='ROQGravitationalWaveTransient', local=False, local_generation=False, local_plot=False, log_directory=None, maximum_frequency='2048', minimum_frequency='10', mode_array=[None], n_parallel=1, n_simulation=0, notification='Never', numerical_relativity_file=None, online_pe=False, osg=False, outdir='/fred/oz170/kwalker/projects/3G_EoS/outdir_bilby_pipe', overwrite_outdir=False, periodic_restart_time=28800, phase_marginalization=False, plot_calibration=False, plot_corner=False, plot_format='png', plot_marginal=False, plot_skymap=False, plot_waveform=False, pn_amplitude_order=0, pn_phase_order=-1, pn_spin_order=-1, pn_tidal_order=-1, post_trigger_duration=2.0, postprocessing_arguments=None, postprocessing_executable=None, prior_dict=None, prior_file='/fred/oz170/kwalker/projects/3G_EoS/prior.prior', psd_dict=None, psd_fractional_overlap=0.5, psd_length=32, psd_maximum_duration=1024, psd_method='median', psd_start_time=None, reference_frame='sky', reference_frequency=20.0, request_cpus=16, request_memory=4.0, request_memory_generation=None, resampling_method='lal', result_format='json', roq_folder='/fred/oz170/rsmith/git/ce_tradestudy_pe/BNS/ROQ_data/SNR1000/f_low_10Hz/ROQ_data/IMRPhenomPv2NRT/1024s', roq_scale_factor=1.0, roq_weights=None, sampler='dynesty', sampler_kwargs="{'nlive': 1000, 'walks': 50, 'check_point_plot': True, 'n_check_point': 10000, 'npool': 16}", sampling_frequency=4096.0, sampling_seed=None, scheduler='condor', scheduler_analysis_time='7-00:00:00', scheduler_args=None, scheduler_env=None, scheduler_module=[None], single_postprocessing_arguments=None, single_postprocessing_executable=None, singularity_image=None, spline_calibration_amplitude_uncertainty_dict=None, spline_calibration_envelope_dict=None, spline_calibration_nodes=5, spline_calibration_phase_uncertainty_dict=None, submit=False, summarypages_arguments=None, time_marginalization=False, time_reference='geocent', timeslide_dict=None, timeslide_file=None, transfer_files=True, trigger_time='0.0', tukey_roll_off=0.4, verbose=False, waveform_approximant='IMRPhenomPv2_NRTidal', waveform_arguments_dict=None, waveform_generator='bilby.gw.waveform_generator.WaveformGenerator', webdir=None, zero_noise=False)
+16:35 bilby_pipe INFO    : Unknown command line arguments: ['--nlive', '1024', '--nact', '25']
+16:35 bilby_pipe INFO    : Generation seed set to 0
+16:35 bilby_pipe INFO    : Setting trigger time 0.0
+16:35 bilby_pipe INFO    : Setting prior-file to /fred/oz170/kwalker/projects/3G_EoS/prior.prior
+16:35 bilby_pipe INFO    : Setting segment duration 1024.0s
+16:35 bilby_pipe INFO    : Requested PSD duration 32768.0=32x1024.0 exceeds allowed maximum 1024. Setting psd_duration = 1024
+16:35 bilby_pipe INFO    : No calibration_model model provided, calibration marginalization will not be used
+16:35 bilby_pipe INFO    : Truncating injection injection df to rows [0]
+16:35 bilby_pipe INFO    : Injecting waveform with 
+16:35 bilby_pipe INFO    : minimum_frequency = 10.0
+16:35 bilby_pipe INFO    : maximum_frequency = 2048.0
+16:35 bilby_pipe INFO    : trigger_time = 0.0
+16:35 bilby_pipe INFO    : start_time = -1022.0
+16:35 bilby_pipe INFO    : duration = 1024.0
+16:35 bilby_pipe INFO    : Simulating strain data from psd-colored noise
+16:35 bilby_pipe INFO    : Using waveform arguments: {'reference_frequency': 20.0, 'waveform_approximant': 'IMRPhenomPv2_NRTidal', 'minimum_frequency': 10.0, 'maximum_frequency': 2048.0, 'catch_waveform_errors': False, 'pn_spin_order': -1, 'pn_tidal_order': -1, 'pn_phase_order': -1, 'pn_amplitude_order': 0, 'mode_array': None, 'numerical_relativity_file': None}
+16:35 bilby_pipe INFO    : Using the lal_binary_neutron_star source model
+16:35 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_neutron_star
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_neutron_star_parameters
+16:35 bilby INFO    : Injected signal in CE:
+16:35 bilby INFO    :   optimal SNR = 431.35
+16:35 bilby INFO    :   matched filter SNR = 430.80-0.93j
+16:35 bilby INFO    :   chirp_mass = 1.384837767869341
+16:35 bilby INFO    :   mass_ratio = 0.9634238115314521
+16:35 bilby INFO    :   a_1 = 0.0
+16:35 bilby INFO    :   a_2 = 0.0
+16:35 bilby INFO    :   tilt_1 = 0.0
+16:35 bilby INFO    :   tilt_2 = 0.0
+16:35 bilby INFO    :   phi_12 = 0.0
+16:35 bilby INFO    :   phi_jl = 0.0
+16:35 bilby INFO    :   luminosity_distance = 176.993051853325
+16:35 bilby INFO    :   dec = -0.47319766222569504
+16:35 bilby INFO    :   ra = 3.82341264110985
+16:35 bilby INFO    :   cos_theta_jn = -0.781636070198716
+16:35 bilby INFO    :   psi = 1.99466687754229
+16:35 bilby INFO    :   phase = 0.414121490030672
+16:35 bilby INFO    :   lambda_1 = 90.49394025271641
+16:35 bilby INFO    :   lambda_2 = 121.928240868236
+16:35 bilby INFO    :   geocent_time = 0.0
+16:35 bilby INFO    : Injected signal in CES:
+16:35 bilby INFO    :   optimal SNR = 491.64
+16:35 bilby INFO    :   matched filter SNR = 492.32-0.26j
+16:35 bilby INFO    :   chirp_mass = 1.384837767869341
+16:35 bilby INFO    :   mass_ratio = 0.9634238115314521
+16:35 bilby INFO    :   a_1 = 0.0
+16:35 bilby INFO    :   a_2 = 0.0
+16:35 bilby INFO    :   tilt_1 = 0.0
+16:35 bilby INFO    :   tilt_2 = 0.0
+16:35 bilby INFO    :   phi_12 = 0.0
+16:35 bilby INFO    :   phi_jl = 0.0
+16:35 bilby INFO    :   luminosity_distance = 176.993051853325
+16:35 bilby INFO    :   dec = -0.47319766222569504
+16:35 bilby INFO    :   ra = 3.82341264110985
+16:35 bilby INFO    :   cos_theta_jn = -0.781636070198716
+16:35 bilby INFO    :   psi = 1.99466687754229
+16:35 bilby INFO    :   phase = 0.414121490030672
+16:35 bilby INFO    :   lambda_1 = 90.49394025271641
+16:35 bilby INFO    :   lambda_2 = 121.928240868236
+16:35 bilby INFO    :   geocent_time = 0.0
+16:35 bilby INFO    : Injected signal in ET1:
+16:35 bilby INFO    :   optimal SNR = 99.48
+16:35 bilby INFO    :   matched filter SNR = 98.44-0.78j
+16:35 bilby INFO    :   chirp_mass = 1.384837767869341
+16:35 bilby INFO    :   mass_ratio = 0.9634238115314521
+16:35 bilby INFO    :   a_1 = 0.0
+16:35 bilby INFO    :   a_2 = 0.0
+16:35 bilby INFO    :   tilt_1 = 0.0
+16:35 bilby INFO    :   tilt_2 = 0.0
+16:35 bilby INFO    :   phi_12 = 0.0
+16:35 bilby INFO    :   phi_jl = 0.0
+16:35 bilby INFO    :   luminosity_distance = 176.993051853325
+16:35 bilby INFO    :   dec = -0.47319766222569504
+16:35 bilby INFO    :   ra = 3.82341264110985
+16:35 bilby INFO    :   cos_theta_jn = -0.781636070198716
+16:35 bilby INFO    :   psi = 1.99466687754229
+16:35 bilby INFO    :   phase = 0.414121490030672
+16:35 bilby INFO    :   lambda_1 = 90.49394025271641
+16:35 bilby INFO    :   lambda_2 = 121.928240868236
+16:35 bilby INFO    :   geocent_time = 0.0
+16:35 bilby INFO    : Injected signal in ET2:
+16:35 bilby INFO    :   optimal SNR = 108.90
+16:35 bilby INFO    :   matched filter SNR = 109.16-0.23j
+16:35 bilby INFO    :   chirp_mass = 1.384837767869341
+16:35 bilby INFO    :   mass_ratio = 0.9634238115314521
+16:35 bilby INFO    :   a_1 = 0.0
+16:35 bilby INFO    :   a_2 = 0.0
+16:35 bilby INFO    :   tilt_1 = 0.0
+16:35 bilby INFO    :   tilt_2 = 0.0
+16:35 bilby INFO    :   phi_12 = 0.0
+16:35 bilby INFO    :   phi_jl = 0.0
+16:35 bilby INFO    :   luminosity_distance = 176.993051853325
+16:35 bilby INFO    :   dec = -0.47319766222569504
+16:35 bilby INFO    :   ra = 3.82341264110985
+16:35 bilby INFO    :   cos_theta_jn = -0.781636070198716
+16:35 bilby INFO    :   psi = 1.99466687754229
+16:35 bilby INFO    :   phase = 0.414121490030672
+16:35 bilby INFO    :   lambda_1 = 90.49394025271641
+16:35 bilby INFO    :   lambda_2 = 121.928240868236
+16:35 bilby INFO    :   geocent_time = 0.0
+16:35 bilby INFO    : Injected signal in ET3:
+16:35 bilby INFO    :   optimal SNR = 85.17
+16:35 bilby INFO    :   matched filter SNR = 85.97-0.61j
+16:35 bilby INFO    :   chirp_mass = 1.384837767869341
+16:35 bilby INFO    :   mass_ratio = 0.9634238115314521
+16:35 bilby INFO    :   a_1 = 0.0
+16:35 bilby INFO    :   a_2 = 0.0
+16:35 bilby INFO    :   tilt_1 = 0.0
+16:35 bilby INFO    :   tilt_2 = 0.0
+16:35 bilby INFO    :   phi_12 = 0.0
+16:35 bilby INFO    :   phi_jl = 0.0
+16:35 bilby INFO    :   luminosity_distance = 176.993051853325
+16:35 bilby INFO    :   dec = -0.47319766222569504
+16:35 bilby INFO    :   ra = 3.82341264110985
+16:35 bilby INFO    :   cos_theta_jn = -0.781636070198716
+16:35 bilby INFO    :   psi = 1.99466687754229
+16:35 bilby INFO    :   phase = 0.414121490030672
+16:35 bilby INFO    :   lambda_1 = 90.49394025271641
+16:35 bilby INFO    :   lambda_2 = 121.928240868236
+16:35 bilby INFO    :   geocent_time = 0.0
+16:35 bilby_pipe INFO    : Using ROQ likelihood with roq-folder=/fred/oz170/rsmith/git/ce_tradestudy_pe/BNS/ROQ_data/SNR1000/f_low_10Hz/ROQ_data/IMRPhenomPv2NRT/1024s and roq-scale-factor=1.0
+16:36 bilby_pipe INFO    : Using the binary_neutron_star_roq source model
+16:36 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.binary_neutron_star_roq
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_neutron_star_parameters
+16:36 bilby INFO    : ROQ time-step = 7.62939453125e-06
+16:36 bilby WARNING : You do not have pyfftw installed, falling back to numpy.fft.
+16:36 bilby INFO    : Using 5599 ROQ time samples
+16:36 bilby INFO    : Check ROQ params with roq_scale_factor=1.0
+16:36 bilby INFO    : Building ROQ weights for CE with 2086913 frequencies between 10.0 and 2048.0.
+17:52 bilby INFO    : Finished building weights for CE
+17:52 bilby INFO    : Check ROQ params with roq_scale_factor=1.0
+17:52 bilby INFO    : Building ROQ weights for CES with 2086913 frequencies between 10.0 and 2048.0.
+19:05 bilby INFO    : Finished building weights for CES
+19:05 bilby INFO    : Check ROQ params with roq_scale_factor=1.0
+19:05 bilby INFO    : Building ROQ weights for ET1 with 2086913 frequencies between 10.0 and 2048.0.
+20:11 bilby INFO    : Finished building weights for ET1
+20:11 bilby INFO    : Check ROQ params with roq_scale_factor=1.0
+20:11 bilby INFO    : Building ROQ weights for ET2 with 2086913 frequencies between 10.0 and 2048.0.
+21:24 bilby INFO    : Finished building weights for ET2
+21:24 bilby INFO    : Check ROQ params with roq_scale_factor=1.0
+21:24 bilby INFO    : Building ROQ weights for ET3 with 2086913 frequencies between 10.0 and 2048.0.
+22:30 bilby INFO    : Finished building weights for ET3
+22:30 bilby INFO    : Saving ROQ weights to outdir_bilby_pipe/data/inj_0_data0_0-0_generation_roq_weights.npz
+22:30 bilby_pipe INFO    : Using ROQGravitationalWaveTransient likelihood with roq-folder=/fred/oz170/rsmith/git/ce_tradestudy_pe/BNS/ROQ_data/SNR1000/f_low_10Hz/ROQ_data/IMRPhenomPv2NRT/1024s
+22:30 bilby_pipe INFO    : Using the binary_neutron_star_roq source model
+22:30 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.binary_neutron_star_roq
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_neutron_star_parameters
+22:30 bilby_pipe INFO    : Loading ROQ weights from outdir_bilby_pipe/data/inj_0_data0_0-0_generation_roq_weights.npz
+22:30 bilby INFO    : Loaded distance marginalisation lookup table from marg_table.npz.
+22:30 bilby INFO    : Loading ROQ weights from outdir_bilby_pipe/data/inj_0_data0_0-0_generation_roq_weights.npz
+22:30 bilby_pipe INFO    : Completed data generation
