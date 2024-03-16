@@ -1,1 +1,1 @@
-Neutron star equation of state hyperparameter estimation from tidal measurements. Used to obtain the results reported in "Precision constraints on the neutron star equation of state with third-generation gravitational-wave observatories", Walker et al. (in prep).
+Neutron star equation of state hyperparameter estimation from tidal measurements. Used to obtain the results reported in "Precision constraints on the neutron star equation of state with third-generation gravitational-wave observatories", Walker et al. (in review).
